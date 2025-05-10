@@ -1,0 +1,18 @@
+
+@import "tailwindcss";
+@import 'tailwindcss/preflight';
+@import 'tailwindcss/utilities';
+@import "keen-slider/keen-slider.min.css";
+
+html {
+  scroll-behavior: smooth;
+}
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+

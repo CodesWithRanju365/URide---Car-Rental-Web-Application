@@ -1,0 +1,35 @@
+/* General Wishlist Styles */
+.wishlist-container {
+  padding: 20px;
+}
+
+.wishlist-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.wishlist-container p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .car-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .car-grid {
+    grid-template-columns: 1fr; /* Single column on small screens */
+  }
+}

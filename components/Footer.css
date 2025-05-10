@@ -1,0 +1,68 @@
+.marmik-footer {
+    background-color: #03256f;
+    color: #e5e7eb;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .footer-column h3,
+  .footer-column h4 {
+    color: #57baf4;
+    margin-bottom: 10px;
+  }
+  
+  .footer-column p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #374151;
+    padding-top: 15px;
+    font-size: 0.85rem;
+    color: #9ca3af;
+  }
+  @media (max-width: 768px) {
+  .marmik-footer {
+    padding: 30px 15px;
+    text-align: left;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-column {
+    min-width: 100%;
+  }
+
+  .footer-column h3,
+  .footer-column h4 {
+    font-size: 1.1rem;
+  }
+
+  .footer-column p {
+    font-size: 0.9rem;
+  }
+
+  .footer-bottom {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+}

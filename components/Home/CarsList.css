@@ -1,0 +1,176 @@
+/* Wrapper container to center the cars list */
+.cars-list-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Message when no cars are found */
+  .no-cars-message {
+    font-size: 1.25rem;
+    color: #6b7280; /* Gray color */
+    margin-top: 20px;
+  }
+  
+  /* The cars list grid */
+  .cars-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 cars per row */
+    gap: 20px;  /* Space between the cards */
+    margin-top: 20px;
+    justify-items: center; /* Center the cards horizontally */
+  }
+  
+  /* Responsiveness for smaller screens */
+  @media (max-width: 1024px) {
+    .cars-list {
+      grid-template-columns: repeat(2, 1fr);  /* 2 cars per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .cars-list {
+      grid-template-columns: 1fr;  /* 1 car per row on small screens */
+    }
+  }
+
+  /* Modal background */
+  .modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+  }
+  
+  /* Modal content box - centered and responsive */
+  .modal-box {
+    background: #fff;
+    align-items: center;
+    align-self: center;
+    width: 85vw;
+    height: 75vh;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto;
+  }
+  
+  /* Modal layout */
+  .modal-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+  
+  .modal-car-preview {
+    flex: 1 1 40%;
+    min-width: 300px;
+  }
+  
+  .modal-details {
+    flex: 1 1 50%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Title */
+  .modal-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  .modal-form-row {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .modal-form-label-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 220px;
+  }
+  
+  .modal-form-label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #222;
+  }
+  
+  .modal-checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    gap: 1rem;
+    margin-top: 0.01rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .modal-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+  }
+  
+  .modal-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Action buttons - centered */
+  .modal-action {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  /* Close button - top right */
+  .modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    background: #1852cf;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background: #422cbf;
+  }
+  
+  .btn.primary {
+    background: #1852cf;
+    color: white;
+  }
+  
+  .btn.primary:hover {
+    background: #422cbf;
+  }
+  
+  
+    

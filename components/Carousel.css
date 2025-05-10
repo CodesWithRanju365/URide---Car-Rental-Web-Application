@@ -1,0 +1,162 @@
+/* carousel.css */
+.carousel-wrapper {
+  background: url('/road2.png') repeat-x center;
+  background-size: cover;
+  padding: 38px 0;
+  position: relative;
+  overflow: hidden;
+  height: 285px;
+}
+
+.embla {
+  overflow: hidden;
+  width: 100%;
+}
+
+.embla__container {
+  display: flex;
+  gap: 2rem;
+  will-change: transform;
+  animation: scrollLeft 20s linear infinite; /* Make the carousel scroll left */
+}
+
+.embla__slide {
+  flex: 0 0 80%;
+  max-width: 300px;
+}
+
+.carousel-card {
+  background: linear-gradient(to bottom, #9fbef7, #cddef4);
+  border-radius: 30px 30px 20px 20px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  transition: transform 0.3s ease;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-card:hover {
+  transform: scale(1.05);
+}
+
+.carousel-card::before,
+.carousel-card::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: black;
+  border-radius: 50%;
+  bottom: -20px;
+}
+
+.carousel-card::before {
+  left: 20px;
+}
+
+.carousel-card::after {
+  right: 20px;
+}
+
+.carousel-text {
+  text-align: center;
+  padding-top: 1rem;
+   color: #1852cf;
+}
+.carousel-heading {
+  position: relative;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #222;
+  border-top: 4px dashed #fcd34d;
+  border-bottom: 4px dashed #fcd34d;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  letter-spacing: 3px;
+  font-family: "Orbitron", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&display=swap');
+.carousel-text h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #1852cf;
+}
+
+.carousel-text p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (max-width: 768px) {
+  .carousel-wrapper {
+    padding: 20px 0;
+    height: auto;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .embla__container {
+    gap: 1rem;
+    animation: scrollLeft 25s linear infinite;
+  }
+
+  .embla__slide {
+    flex: 0 0 90%;
+    max-width: 90%;
+  }
+
+  .carousel-card {
+    padding: 1rem;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+  }
+
+  .carousel-card::before,
+  .carousel-card::after {
+    width: 30px;
+    height: 30px;
+    bottom: -15px;
+  }
+
+  .carousel-card::before {
+    left: 15px;
+  }
+
+  .carousel-card::after {
+    right: 15px;
+  }
+
+  .carousel-text {
+    padding-top: 0.5rem;
+  }
+
+  .carousel-text h2 {
+    font-size: 1rem;
+  }
+
+  .carousel-text p {
+    font-size: 0.85rem;
+  }
+
+  .carousel-heading {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    letter-spacing: 2px;
+  }
+}

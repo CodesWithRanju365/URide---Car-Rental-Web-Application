@@ -1,0 +1,48 @@
+{
+  "name": "cars-rental-fullstackproject",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "patch-package",
+    "tailwind": "npx tailwindcss"
+  },
+  "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@clerk/clerk-react": "^5.29.0",
+    "@clerk/nextjs": "^6.17.0",
+    "@supabase/supabase-js": "^2.49.4",
+    "axios": "^1.9.0",
+    "embla-carousel-react": "^8.6.0",
+    "graphql": "^16.11.0",
+    "graphql-request": "^7.1.2",
+    "keen-slider": "^6.8.6",
+    "lightningcss": "^1.29.3",
+    "lodash": "^4.17.21",
+    "next": "^15.3.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.4",
+    "@types/lodash": "^4.17.16",
+    "@types/node": "^22.15.12",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "autoprefixer": "^10.4.21",
+    "daisyui": "^5.0.27",
+    "tailwindcss": "^4.1.4",
+    "typescript": "^5"
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).",
+  "main": "next.config.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

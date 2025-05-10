@@ -1,0 +1,154 @@
+.heroContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem 2rem;
+    background-color: white;
+    background-image: url('/hero.png'), url('/bg.png');
+    background-size: auto 100%;
+    background-position: center right, left;
+    background-repeat: no-repeat, repeat-x;
+    background-attachment: scroll; /* scrolls naturally with page */
+    height: 100vh;
+    overflow: hidden;
+  }
+  .heroTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: left;
+  color: #fff;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  animation: floatTitle 6s ease-in-out infinite;
+  background: linear-gradient(135deg, #0d0de6,#0d0380, #00C6FF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 102, 255, 0.5);
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.heroTitle:hover {
+  transform: rotateX(10deg) rotateY(10deg) scale(1.05);
+  text-shadow: 4px 4px 12px rgba(0, 123, 255, 0.6);
+}
+
+@keyframes floatTitle {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(5deg) rotateY(5deg);
+  }
+}
+
+  
+  .heroTitle pre{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+  }
+  .heroSubtitle {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #0d0380;
+  text-align: left center;
+  margin: 1rem auto 2rem;
+  max-width: 800px;
+  line-height: 1.8;
+  animation: fadeInSub 2s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeInSub {
+  to {
+    opacity: 1;
+  }
+}
+  
+  .heroButton {
+    background-color: #12059e;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .heroButton:hover {
+    background-color: #422cbf;
+  }
+  
+  .heroImageWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 70%;
+    z-index: 1;
+  }
+  
+  .heroImage {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  @media (max-width: 768px) {
+  .heroContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-position: center center, left;
+    background-size: cover;
+    height: auto;
+    text-align: center;
+  }
+
+  .heroTitle {
+    font-size: 1.8rem;
+    text-align: center;
+    animation: none; /* Simplify for mobile */
+    text-shadow: none;
+    margin-bottom: 1rem;
+  }
+
+  .heroTitle:hover {
+    transform: none;
+    text-shadow: none;
+  }
+
+  .heroTitle pre {
+    font-size: 1.5rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 1rem 0;
+  }
+
+  .heroButton {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .heroImageWrapper {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    z-index: 0;
+  }
+
+  .heroImage {
+    width: 100%;
+    height: auto;
+  }
+}

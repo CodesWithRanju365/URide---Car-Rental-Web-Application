@@ -1,0 +1,38 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 2p;
+  }
+  
+  .leftSection {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-left: 320px;
+    padding: 0;
+  }
+  
+  .link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1852cf;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: #0344f8d1;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+  
