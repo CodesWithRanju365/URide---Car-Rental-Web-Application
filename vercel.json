@@ -15,7 +15,6 @@
   "env": {
     "NEXT_PUBLIC_API_URL": "https://ap-south-1.cdn.hygraph.com/content/cm9sam4di03pf08vyfqd73smc/master"
   },
-  "regions": ["iad1"], 
   "cleanUrls": true,
   "trailingSlash": false
 }
