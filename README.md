@@ -1,6 +1,6 @@
 # Car Rental Web Application
 
-A full-stack car rental web application built with **Next.js**, **Node.js**, **React**, **TypeScript**, **CSS3** , **SWR**, **Supabase** and **Clerk** for authentication. This application allows users to browse, filter, and book cars for rent. It includes features like location-based searches, pricing filters, and car availability.
+A full-stack car rental web application built with **Next.js**, **Node.js**, **React**, **TypeScript**, **CSS3** , **SWR**, **Supabase** and **Clerk** for authentication. This application allows users to browse, filter, and book cars for rent. It includes features like location-based searches, pricing filters, bookings, wishlist and car availability.
 
 ## Features
 
